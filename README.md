@@ -2,12 +2,12 @@
 
 ## Author : Anuroop Arya 
 
-This project aims to predict real estate prices in Bangalore based on various factors such as location, total square feet area, number of bathrooms, and bedrooms (BHK). The model is built using Python, leveraging machine learning techniques.
+This project aims to predict real estate prices based on various factors such as location, total square feet area, number of bathrooms, and bedrooms (BHK). The model is built using Python, leveraging machine learning techniques.
 
 ## Approach
 
 1. **Data Load and Cleaning:**
-   - The data is loaded from a CSV file containing Bangalore home prices.
+   - The data is loaded from a CSV file containing home prices.
    - Irrelevant features like `area_type`, `society`, `balcony`, and `availability` are removed.
    - NA values are handled by dropping rows with missing values in critical columns (`location`, `size`, `bath`).
 
