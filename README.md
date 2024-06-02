@@ -1,6 +1,6 @@
 # Predictive Real Estate Analysis
 
-##Author : Anuroop Arya 
+## Author : Anuroop Arya 
 
 This project aims to predict real estate prices in Bangalore based on various factors such as location, total square feet area, number of bathrooms, and bedrooms (BHK). The model is built using Python, leveraging machine learning techniques.
 
