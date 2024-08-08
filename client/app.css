@@ -1,0 +1,204 @@
+/* Import Roboto font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/* General styling for the page background */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Improved styling for the background image */
+.img {
+  background: url('https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: none; /* Remove blur effect */
+}
+
+/* Styles for the form container */
+.form {
+  max-width: 400px;
+  margin: 5% auto; /* Adjusted margin */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* White background with a tint */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field styles */
+.area, .location {
+  outline: 0;
+  background: #dcdcdc; /* Light grayish white */
+  width: calc(100% - 30px);
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+  }
+  
+
+/* Button styles for submit and result */
+.submit, .result {
+  background: #333; /* Black */
+  color: #fff; /* White text */
+  width: 100%;
+  border: 0;
+  margin: 20px 0 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit:hover, .result:hover {
+  background: #e4d899; /* Darker Black on hover */
+}
+
+
+  /* Button styles for submit and result */
+.submit {
+	background: #000000; /* Change to a professional color, e.g., a shade of blue */
+	color: #ffffff; /* Text color */
+	width: 100%;
+	border: 0;
+	margin: 20px 0 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .submit:hover {
+	background: #e4d899; /* Darken the background on hover */
+  }
+  
+  
+  /* Adjusted style for output result */
+  .result {
+	background: #ffffff; /* Light yellowish background */
+	width: 100%;
+	border: 0;
+	margin: 20px 0 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	color: #060606; /* Text color */
+  }
+  
+
+/* Switch field styles */
+.switch-field {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  flex: 1;
+  background-color: #eee; /* Light gray */
+  color: #555; /* Dark gray text */
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  padding: 12px 16px;
+  margin-right: -1px;
+  border: 1px solid #ccc; /* Light gray border */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #333; /* Black when checked */
+  color: #fff; /* White text when checked */
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Switch field indicator styles */
+.switch-field label:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc; /* Light gray border */
+  position: relative;
+  z-index: -1;
+}
+
+.switch-field input:checked + label:before {
+  background-color: #fff;
+}
+
+/* Additional styles for switch field */
+.switch-field label:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+
+/* Styles for form link (if needed) */
+.form a {
+  color: #3498db; /* Dodger Blue */
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  .form {
+    max-width: 80%;
+  }
+}
